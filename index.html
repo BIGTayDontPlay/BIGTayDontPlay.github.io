@@ -3,66 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thornhill Labs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        .container {
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        .btn {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-        }
-        .logo {
-            margin-top: 20px;
-        }
-    </style>
+    <title>Thornhill Labs - Unmatched Cyber Defense</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <picture class="logo">
-            <source srcset="images/thornhilllabs_logo.webp" type="image/webp">
-            <img src="images/thornhilllabs_logo.png" alt="Thornhill Labs Logo" style="width:150px;height:auto;">
-        </picture>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Unleash Unmatched Cyber Defense with Thornhill Labs</h1>
+            <p>Expert Cybersecurity Services, Designed to Protect</p>
+            <button onclick="window.location.href='#contact'">Get a Free Security Consultation</button>
+        </div>
     </header>
-    <div class="container">
-        <h1>Welcome to Thornhill Labs</h1>
-        <p>Your trusted partner in cybersecurity. We specialize in penetration testing, vulnerability assessments, and network security audits.</p>
-        <a href="about.html" class="btn">Learn More</a>
-    </div>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <div class="container">
+            <p>Thornhill Labs is your trusted partner in defending against modern cyber threats. We provide tailored cybersecurity solutions to safeguard your business from digital risks. Our expert team delivers innovative and robust security services to keep your network secure.</p>
+        </div>
+    </section>
+
+    <!-- Key Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <h2>Key Services Overview</h2>
+            <ul>
+                <li><strong>AI Agent Engineering:</strong> Harness the power of AI to create intelligent agents that enhance cybersecurity capabilities.</li>
+                <li><strong>Penetration Testing:</strong> Uncover vulnerabilities in your systems before attackers do.</li>
+                <li><strong>Incident Response:</strong> Rapid response to minimize damage and quickly recover from cyberattacks.</li>
+                <li><strong>Vulnerability Assessments:</strong> Identify weak points in your infrastructure to improve defenses.</li>
+                <li><strong>Threat Intelligence:</strong> Stay ahead of emerging threats with proactive insights.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Cybersecurity Threats Overview -->
+    <section class="threats-overview">
+        <div class="container">
+            <h2>Cybersecurity Threats Overview</h2>
+            <p>Ransomware, Phishing, and Advanced Persistent Threats (APTs) are major risks to businesses today. Learn how these threats can affect your business and how Thornhill Labs can protect you.</p>
+        </div>
+    </section>
+
+    <!-- Services Details -->
+    <section class="services-details">
+        <div class="container">
+            <h2>Services Details</h2>
+            <ul>
+                <li><strong>AI Agent Engineering:</strong> Our AI experts design and build intelligent agents tailored to automate security processes, detect anomalies, and respond to threats efficiently, taking your cybersecurity to the next level.</li>
+                <li><strong>Web Application Security:</strong> Ensure your web applications are secure from the ground up.</li>
+                <li><strong>Network Defense:</strong> Protect your internal and external networks from malicious actors.</li>
+                <li><strong>Security Awareness Training:</strong> Equip your employees with the knowledge to recognize and avoid cyber threats.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Client Success Stories -->
+    <section class="client-stories">
+        <div class="container">
+            <h2>Client Success Stories</h2>
+            <blockquote>
+                "Thornhill Labs helped us identify and resolve a major vulnerability in our network, ensuring our data remained safe. Their expertise and prompt response were invaluable." - <em>Satisfied Client</em>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Resources and Insights -->
+    <section class="resources-insights">
+        <div class="container">
+            <h2>Resources and Insights</h2>
+            <h3>Latest Blog Posts</h3>
+            <ul>
+                <li><a href="#">Tips to Secure Your Small Business Network</a></li>
+                <li><a href="#">Understanding Zero-Day Vulnerabilities</a></li>
+            </ul>
+            <h3>Downloadable Guides</h3>
+            <p>Get in-depth resources to enhance your security posture.</p>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <p><strong>Mission Statement:</strong> Thornhill Labs is dedicated to providing expert cybersecurity services to businesses of all sizes. With a commitment to quality and a passion for protecting the digital landscape, we help organizations achieve a secure environment.</p>
+            <p><strong>Certifications & Qualifications:</strong> Our team holds certifications like CEH, CompTIA Security+, and CISSP, ensuring that we bring the best expertise to every engagement.</p>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-us" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Fill out the form below for a free consultation or more information about our services.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Email:</strong> contact@thornhilllabs.com</p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="quick-links">
+                <a href="#">Home</a> |
+                <a href="#">Services</a> |
+                <a href="#">Blog</a> |
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="social-media">
+                <p>Follow us on:</p>
+                <a href="#">LinkedIn</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Facebook</a>
+            </div>
+            <div class="privacy-policy">
+                <p>Protecting your information is a priority.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
