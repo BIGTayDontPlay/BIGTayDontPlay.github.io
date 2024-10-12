@@ -17,10 +17,32 @@
         .hero {
             background-image: url('images/network_security_themed_background.webp');
             background-size: cover;
-            color: #ffffff;
+            background-position: center;
             text-align: center;
-            padding: 100px 0;
+            padding: 100px 20px;
+            color: #ffffff;
         }
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .hero button:hover {
+            background-color: #004191;
+        }
+
+        /* Section Images */
         .introduction img,
         .services-overview img,
         .threats-overview img,
@@ -29,8 +51,83 @@
         .resources-insights img {
             width: 100%;
             max-width: 600px;
+            height: auto;
             display: block;
             margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        /* Section Layout */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        ul {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 1.1rem;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        form label {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+        form input,
+        form textarea {
+            padding: 10px;
+            font-size: 1rem;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+        form button:hover {
+            background-color: #004191;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -40,7 +137,7 @@
         <div class="container">
             <img src="images/T-Labs-Logo1.png" alt="Thornhill Labs Logo" class="logo">
         <div class="hero-content">
-            <h1 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); color: #ffffff;">Unleash Unmatched Cyber Defense with Thornhill Labs</h1>
+            <h1>Unleash Unmatched Cyber Defense with Thornhill Labs</h1>
             <p>Expert Cybersecurity Services, Designed to Protect</p>
             <button onclick="window.location.href='#contact'">Get a Free Security Consultation</button>
         </div>
@@ -49,6 +146,7 @@
     <!-- Introduction Section -->
     <section class="introduction">
         <div class="container">
+            <h2>Introduction</h2>
             <p>Thornhill Labs is your trusted partner in defending against modern cyber threats. We provide tailored cybersecurity solutions to safeguard your business from digital risks. Our expert team delivers innovative and robust security services to keep your network secure.</p>
             <img src="images/cybersecurity_professional_team.webp" alt="Cybersecurity Professional Team">
         </div>
