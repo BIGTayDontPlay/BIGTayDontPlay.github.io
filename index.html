@@ -23,11 +23,11 @@
             color: #ffffff;
         }
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         .hero p {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 20px;
         }
         .hero button {
@@ -42,42 +42,52 @@
             background-color: #004191;
         }
 
-        /* Section Images */
-        .introduction img,
-        .services-overview img,
-        .threats-overview img,
-        .client-stories img,
-        .about-us img,
-        .resources-insights img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-        }
-
-        /* Section Layout */
+        /* Section Layout with Smaller Images */
         section {
-            padding: 60px 20px;
-            text-align: center;
+            padding: 40px 20px;
+            text-align: left;
         }
         h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 20px;
         }
         p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             line-height: 1.6;
         }
         ul {
-            text-align: left;
             margin: 20px auto;
             max-width: 800px;
             font-size: 1.1rem;
+            list-style: none;
         }
         ul li {
             margin-bottom: 10px;
+        }
+
+        /* Flex Layout for Text-Image Alignment */
+        .content-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .content-container img {
+            width: 45%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .content-container .text {
+            width: 50%;
+            margin: 10px;
+        }
+
+        .text p, .text ul {
+            margin: 0;
         }
 
         /* Contact Form Styling */
@@ -145,83 +155,97 @@
 
     <!-- Introduction Section -->
     <section class="introduction">
-        <div class="container">
-            <h2>Introduction</h2>
-            <p>Thornhill Labs is your trusted partner in defending against modern cyber threats. We provide tailored cybersecurity solutions to safeguard your business from digital risks. Our expert team delivers innovative and robust security services to keep your network secure.</p>
+        <div class="content-container">
+            <div class="text">
+                <h2>Introduction</h2>
+                <p>Thornhill Labs is your trusted partner in defending against modern cyber threats. We provide tailored cybersecurity solutions to safeguard your business from digital risks. Our expert team delivers innovative and robust security services to keep your network secure.</p>
+            </div>
             <img src="images/cybersecurity_professional_team.webp" alt="Cybersecurity Professional Team">
         </div>
     </section>
 
     <!-- Key Services Overview -->
     <section class="services-overview">
-        <div class="container">
-            <h2>Key Services Overview</h2>
-            <ul>
-                <li><strong>AI Agent Engineering:</strong> Harness the power of AI to create intelligent agents that enhance cybersecurity capabilities.</li>
-                <li><strong>Penetration Testing:</strong> Uncover vulnerabilities in your systems before attackers do.</li>
-                <li><strong>Incident Response:</strong> Rapid response to minimize damage and quickly recover from cyberattacks.</li>
-                <li><strong>Vulnerability Assessments:</strong> Identify weak points in your infrastructure to improve defenses.</li>
-                <li><strong>Threat Intelligence:</strong> Stay ahead of emerging threats with proactive insights.</li>
-            </ul>
+        <div class="content-container">
+            <div class="text">
+                <h2>Key Services Overview</h2>
+                <ul>
+                    <li><strong>AI Agent Engineering:</strong> Harness the power of AI to create intelligent agents that enhance cybersecurity capabilities.</li>
+                    <li><strong>Penetration Testing:</strong> Uncover vulnerabilities in your systems before attackers do.</li>
+                    <li><strong>Incident Response:</strong> Rapid response to minimize damage and quickly recover from cyberattacks.</li>
+                    <li><strong>Vulnerability Assessments:</strong> Identify weak points in your infrastructure to improve defenses.</li>
+                    <li><strong>Threat Intelligence:</strong> Stay ahead of emerging threats with proactive insights.</li>
+                </ul>
+            </div>
             <img src="images/AI_Agent_Engineering.webp" alt="AI Agent Engineering">
         </div>
     </section>
 
     <!-- Cybersecurity Threats Overview -->
     <section class="threats-overview">
-        <div class="container">
-            <h2>Cybersecurity Threats Overview</h2>
-            <p>Ransomware, Phishing, and Advanced Persistent Threats (APTs) are major risks to businesses today. Learn how these threats can affect your business and how Thornhill Labs can protect you.</p>
+        <div class="content-container">
+            <div class="text">
+                <h2>Cybersecurity Threats Overview</h2>
+                <p>Ransomware, Phishing, and Advanced Persistent Threats (APTs) are major risks to businesses today. Learn how these threats can affect your business and how Thornhill Labs can protect you.</p>
+            </div>
             <img src="images/cyber_threats.webp" alt="Cybersecurity Threats">
         </div>
     </section>
 
     <!-- Services Details -->
     <section class="services-details">
-        <div class="container">
-            <h2>Services Details</h2>
-            <ul>
-                <li><strong>AI Agent Engineering:</strong> Our AI experts design and build intelligent agents tailored to automate security processes, detect anomalies, and respond to threats efficiently, taking your cybersecurity to the next level.</li>
-                <li><strong>Web Application Security:</strong> Ensure your web applications are secure from the ground up.</li>
-                <li><strong>Network Defense:</strong> Protect your internal and external networks from malicious actors.</li>
-                <li><strong>Security Awareness Training:</strong> Equip your employees with the knowledge to recognize and avoid cyber threats.</li>
-            </ul>
+        <div class="content-container">
+            <div class="text">
+                <h2>Services Details</h2>
+                <ul>
+                    <li><strong>AI Agent Engineering:</strong> Our AI experts design and build intelligent agents tailored to automate security processes, detect anomalies, and respond to threats efficiently, taking your cybersecurity to the next level.</li>
+                    <li><strong>Web Application Security:</strong> Ensure your web applications are secure from the ground up.</li>
+                    <li><strong>Network Defense:</strong> Protect your internal and external networks from malicious actors.</li>
+                    <li><strong>Security Awareness Training:</strong> Equip your employees with the knowledge to recognize and avoid cyber threats.</li>
+                </ul>
+            </div>
             <img src="images/penetration_tester.webp" alt="Penetration Testing">
         </div>
     </section>
 
     <!-- Client Success Stories -->
     <section class="client-stories">
-        <div class="container">
-            <h2>Client Success Stories</h2>
-            <blockquote>
-                "Thornhill Labs helped us identify and resolve a major vulnerability in our network, ensuring our data remained safe. Their expertise and prompt response were invaluable." - <em>Satisfied Client</em>
-            </blockquote>
+        <div class="content-container">
+            <div class="text">
+                <h2>Client Success Stories</h2>
+                <blockquote>
+                    "Thornhill Labs helped us identify and resolve a major vulnerability in our network, ensuring our data remained safe. Their expertise and prompt response were invaluable." - <em>Satisfied Client</em>
+                </blockquote>
+            </div>
             <img src="images/team_collaboration.webp" alt="Team Collaboration">
         </div>
     </section>
 
     <!-- Resources and Insights -->
     <section class="resources-insights">
-        <div class="container">
-            <h2>Resources and Insights</h2>
-            <h3>Latest Blog Posts</h3>
-            <ul>
-                <li><a href="#">Tips to Secure Your Small Business Network</a></li>
-                <li><a href="#">Understanding Zero-Day Vulnerabilities</a></li>
-            </ul>
-            <h3>Downloadable Guides</h3>
-            <p>Get in-depth resources to enhance your security posture.</p>
+        <div class="content-container">
+            <div class="text">
+                <h2>Resources and Insights</h2>
+                <h3>Latest Blog Posts</h3>
+                <ul>
+                    <li><a href="#">Tips to Secure Your Small Business Network</a></li>
+                    <li><a href="#">Understanding Zero-Day Vulnerabilities</a></li>
+                </ul>
+                <h3>Downloadable Guides</h3>
+                <p>Get in-depth resources to enhance your security posture.</p>
+            </div>
             <img src="images/Latest_Blog_Posts.webp" alt="Latest Blog Posts">
         </div>
     </section>
 
     <!-- About Us -->
     <section class="about-us">
-        <div class="container">
-            <h2>About Us</h2>
-            <p><strong>Mission Statement:</strong> Thornhill Labs is dedicated to providing expert cybersecurity services to businesses of all sizes. With a commitment to quality and a passion for protecting the digital landscape, we help organizations achieve a secure environment.</p>
-            <p><strong>Certifications & Qualifications:</strong> Our team holds certifications like CEH, CompTIA Security+, and CISSP, ensuring that we bring the best expertise to every engagement.</p>
+        <div class="content-container">
+            <div class="text">
+                <h2>About Us</h2>
+                <p><strong>Mission Statement:</strong> Thornhill Labs is dedicated to providing expert cybersecurity services to businesses of all sizes. With a commitment to quality and a passion for protecting the digital landscape, we help organizations achieve a secure environment.</p>
+                <p><strong>Certifications & Qualifications:</strong> Our team holds certifications like CEH, CompTIA Security+, and CISSP, ensuring that we bring the best expertise to every engagement.</p>
+            </div>
             <img src="images/vulnerability_assessment.webp" alt="Vulnerability Assessment">
         </div>
     </section>
