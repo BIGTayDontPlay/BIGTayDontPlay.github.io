@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
         .logo {
             width: 150px;
             margin-bottom: 20px;
@@ -14,22 +19,26 @@
             margin-left: auto;
             margin-right: auto;
         }
+
         .hero {
             background-image: url('images/network_security_themed_background.webp');
             background-size: cover;
             background-position: center;
             text-align: center;
-            padding: 100px 20px;
+            padding: 80px 20px;
             color: #ffffff;
         }
+
         .hero h1 {
             font-size: 2.5rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
+
         .hero p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 20px;
         }
+
         .hero button {
             padding: 10px 20px;
             background-color: #0056b3;
@@ -38,56 +47,63 @@
             cursor: pointer;
             font-size: 1rem;
         }
+
         .hero button:hover {
             background-color: #004191;
         }
 
-        /* Section Layout with Smaller Images */
+        /* Alternating Image Layout */
         section {
             padding: 40px 20px;
-            text-align: left;
-        }
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-        ul {
-            margin: 20px auto;
-            max-width: 800px;
-            font-size: 1.1rem;
-            list-style: none;
-        }
-        ul li {
-            margin-bottom: 10px;
         }
 
-        /* Flex Layout for Text-Image Alignment */
         .content-container {
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+            margin-bottom: 60px;
         }
 
-        .content-container img {
-            width: 45%;
-            max-width: 300px;
+        /* Alternating Images */
+        .content-container:nth-child(even) .image {
+            order: -1;
+        }
+
+        .text {
+            width: 55%;
+            padding: 10px;
+        }
+
+        .image {
+            width: 35%;
+            max-width: 250px;
+            margin: 10px;
+        }
+
+        .image img {
+            width: 100%;
             height: auto;
-            margin: 10px;
-            border-radius: 8px;
+            border-radius: 10px;
         }
 
-        .content-container .text {
-            width: 50%;
-            margin: 10px;
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
         }
 
-        .text p, .text ul {
-            margin: 0;
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
         }
 
         /* Contact Form Styling */
@@ -97,10 +113,12 @@
             max-width: 500px;
             margin: 20px auto;
         }
+
         form label {
             margin-top: 10px;
             font-size: 1.1rem;
         }
+
         form input,
         form textarea {
             padding: 10px;
@@ -109,6 +127,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+
         form button {
             padding: 10px 20px;
             background-color: #0056b3;
@@ -118,6 +137,7 @@
             margin-top: 20px;
             font-size: 1rem;
         }
+
         form button:hover {
             background-color: #004191;
         }
@@ -128,12 +148,14 @@
             color: #fff;
             padding: 20px;
         }
+
         .footer .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
         }
+
         .footer a {
             color: #fff;
             text-decoration: none;
@@ -146,10 +168,11 @@
     <header class="hero">
         <div class="container">
             <img src="images/T-Labs-Logo1.png" alt="Thornhill Labs Logo" class="logo">
-        <div class="hero-content">
-            <h1>Unleash Unmatched Cyber Defense with Thornhill Labs</h1>
-            <p>Expert Cybersecurity Services, Designed to Protect</p>
-            <button onclick="window.location.href='#contact'">Get a Free Security Consultation</button>
+            <div class="hero-content">
+                <h1>Unleash Unmatched Cyber Defense with Thornhill Labs</h1>
+                <p>Expert Cybersecurity Services, Designed to Protect</p>
+                <button onclick="window.location.href='#contact'">Get a Free Security Consultation</button>
+            </div>
         </div>
     </header>
 
@@ -160,13 +183,18 @@
                 <h2>Introduction</h2>
                 <p>Thornhill Labs is your trusted partner in defending against modern cyber threats. We provide tailored cybersecurity solutions to safeguard your business from digital risks. Our expert team delivers innovative and robust security services to keep your network secure.</p>
             </div>
-            <img src="images/cybersecurity_professional_team.webp" alt="Cybersecurity Professional Team">
+            <div class="image">
+                <img src="images/cybersecurity_professional_team.webp" alt="Cybersecurity Professional Team">
+            </div>
         </div>
     </section>
 
     <!-- Key Services Overview -->
     <section class="services-overview">
         <div class="content-container">
+            <div class="image">
+                <img src="images/AI_Agent_Engineering.webp" alt="AI Agent Engineering">
+            </div>
             <div class="text">
                 <h2>Key Services Overview</h2>
                 <ul>
@@ -177,7 +205,6 @@
                     <li><strong>Threat Intelligence:</strong> Stay ahead of emerging threats with proactive insights.</li>
                 </ul>
             </div>
-            <img src="images/AI_Agent_Engineering.webp" alt="AI Agent Engineering">
         </div>
     </section>
 
@@ -188,13 +215,18 @@
                 <h2>Cybersecurity Threats Overview</h2>
                 <p>Ransomware, Phishing, and Advanced Persistent Threats (APTs) are major risks to businesses today. Learn how these threats can affect your business and how Thornhill Labs can protect you.</p>
             </div>
-            <img src="images/cyber_threats.webp" alt="Cybersecurity Threats">
+            <div class="image">
+                <img src="images/cyber_threats.webp" alt="Cybersecurity Threats">
+            </div>
         </div>
     </section>
 
     <!-- Services Details -->
     <section class="services-details">
         <div class="content-container">
+            <div class="image">
+                <img src="images/penetration_tester.webp" alt="Penetration Testing">
+            </div>
             <div class="text">
                 <h2>Services Details</h2>
                 <ul>
@@ -204,7 +236,6 @@
                     <li><strong>Security Awareness Training:</strong> Equip your employees with the knowledge to recognize and avoid cyber threats.</li>
                 </ul>
             </div>
-            <img src="images/penetration_tester.webp" alt="Penetration Testing">
         </div>
     </section>
 
@@ -217,13 +248,18 @@
                     "Thornhill Labs helped us identify and resolve a major vulnerability in our network, ensuring our data remained safe. Their expertise and prompt response were invaluable." - <em>Satisfied Client</em>
                 </blockquote>
             </div>
-            <img src="images/team_collaboration.webp" alt="Team Collaboration">
+            <div class="image">
+                <img src="images/team_collaboration.webp" alt="Team Collaboration">
+            </div>
         </div>
     </section>
 
     <!-- Resources and Insights -->
     <section class="resources-insights">
         <div class="content-container">
+            <div class="image">
+                <img src="images/Latest_Blog_Posts.webp" alt="Latest Blog Posts">
+            </div>
             <div class="text">
                 <h2>Resources and Insights</h2>
                 <h3>Latest Blog Posts</h3>
@@ -234,7 +270,6 @@
                 <h3>Downloadable Guides</h3>
                 <p>Get in-depth resources to enhance your security posture.</p>
             </div>
-            <img src="images/Latest_Blog_Posts.webp" alt="Latest Blog Posts">
         </div>
     </section>
 
@@ -246,7 +281,9 @@
                 <p><strong>Mission Statement:</strong> Thornhill Labs is dedicated to providing expert cybersecurity services to businesses of all sizes. With a commitment to quality and a passion for protecting the digital landscape, we help organizations achieve a secure environment.</p>
                 <p><strong>Certifications & Qualifications:</strong> Our team holds certifications like CEH, CompTIA Security+, and CISSP, ensuring that we bring the best expertise to every engagement.</p>
             </div>
-            <img src="images/vulnerability_assessment.webp" alt="Vulnerability Assessment">
+            <div class="image">
+                <img src="images/vulnerability_assessment.webp" alt="Vulnerability Assessment">
+            </div>
         </div>
     </section>
 
@@ -275,7 +312,9 @@
                 <p><strong>Email:</strong> contact@thornhilllabs.com</p>
                 <p><strong>Phone:</strong> +1 (405) 456-9380</p>
             </div>
-            <img src="images/customer_support.webp" alt="Customer Support">
+            <div class="image">
+                <img src="images/customer_support.webp" alt="Customer Support">
+            </div>
         </div>
     </section>
 
