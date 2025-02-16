@@ -1,0 +1,138 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light gray background for modern, clean look */
+    color: #343a40; /* Dark gray text for readability */
+}
+
+/* Navigation Styling */
+header {
+    background: #212529; /* Darker background for contrast */
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for better UX */
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Highlight on hover */
+}
+
+/* Parallax Section */
+.parallax-section {
+    position: relative;
+    height: 60vh; /* Responsive height */
+    overflow: hidden;
+}
+
+.parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* For true parallax effect */
+}
+
+.parallax-section .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for better readability on image */
+}
+
+.parallax-section .content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* About Us, Blog Posts, and Contact Sections */
+#about-us, #blog-posts, #contact {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: #ffffff; /* White background for content sections */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 2rem auto;
+    max-width: 1200px; /* Limit width for better readability on larger screens */
+}
+
+#about-us img, #blog-posts img, #contact img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 2rem 0;
+}
+
+/* General Section Styling */
+section {
+    margin: 2rem 0;
+}
+
+/* Button Styling for Interaction */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+
+    .parallax-section {
+        height: 40vh;
+    }
+
+    .parallax-section .content h2 {
+        font-size: 2rem;
+    }
+}
